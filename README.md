@@ -10,11 +10,16 @@
 推迟关卡对短期活跃无显著影响，但**7日留存率显著下降 0.82 个百分点**（p = 0.0016）。建议保留原版 gate_30 设置。
 
 ## 技术栈
-- Python (pandas, scipy, matplotlib, seaborn)
+- Python (pandas, scipy, matplotlib, seaborn, streamlit)
 - 统计方法：卡方检验、独立样本t检验、缩尾处理（Winsorize）
 
 ## 目录结构
 - `数据/`：原始数据（cookie_cats.csv）
-- `代码/`：分析源码（分析过程.py）
-- `图表/`：可视化输出
+- `代码/`：分析源码（分析过程.py、仪表盘.py）
+- `图表/`：可视化输出及仪表盘截图
 - `分析报告.md`：完整分析报告
+
+## 交互式仪表盘
+本地运行：
+```bash
+streamlit run 代码/仪表盘.py
